@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-
+    <!--Подключаю библиотеку jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <title>Однорукий бандит</title>
 </head>
@@ -32,8 +35,6 @@
 <canvas class="drum rightDrum">
     <p>Your browser doesnt support canvas !</p>
 </canvas>
-
-<script type="text/javascript" src="js/test.js"></script>
 
 <!--Кнопки-->
 <button class="button plus" onclick="increaseBet()">+</button>
@@ -68,6 +69,9 @@
         <button onclick="document.getElementById('popup-winner').style.display = 'none';">OK</button>
     </footer>
 </div>
+
+<!--Подключаю файл своего скрипта-->
+<script type="text/javascript" src="js/test.js"></script>
 
 </body>
 </html>

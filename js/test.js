@@ -53,9 +53,6 @@ function addFunds(value) {
 }
 
 /// CANVAS ///
-const
-    canvWidth = 312,
-    canvHeigh = 482;
 let
     canvLeft = document.getElementsByClassName('leftDrum')[0],
     canvCenter = document.getElementsByClassName('centerDrum')[0],
@@ -238,3 +235,8 @@ function showWin(winAmount) {
         document.getElementById('win_popup_count').innerHTML = winAmount + ' монет';
     }
 }
+
+//JQuery
+$(document).ready(function () {
+   console.log('DOM Content loaded');
+});
