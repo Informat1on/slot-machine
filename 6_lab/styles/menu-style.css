@@ -1,0 +1,94 @@
+body{
+    background-image: url("../img/background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header{
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    font-weight: bolder;
+    text-shadow: black 0 0 20px;
+
+}
+
+#top{
+    left: 649px;
+    top: 14%;
+}
+.row{
+    color: white;
+    /*width: 304px;*/
+    /*height: 60px;*/
+    width: 20%;
+    height: 7.5%;
+    position: fixed;
+    background-image: url("../img/row2-test3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 39%;
+    text-align: center;
+    text-shadow: black 0 0 4px;
+    font-size: 100%;
+}
+
+#about{
+    top: 35%;
+}
+#rules{
+    top: 45%;
+}
+#play{
+    top: 55%;
+}
+.row-text{
+    /*margin-top: 9px;*/
+    margin-top: 2%;
+}
+.row:hover{
+    border: 2px solid red;
+}
+
+.popup{
+    color: yellow;
+    background: url("../img/popup-window.png") no-repeat;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    width: 305px;
+    height: 180px;
+    left:39%;
+    border: 3px solid yellow;
+    /*border-radius: 10px;*/
+    border-radius: 1%;
+    position: absolute;
+    /*width: 20%;*/
+    /*height: 20%;*/
+
+}
+p{
+    padding: 8px;
+}
+
+/*при нажатии на */
+#popup-top:target {
+    display: block;
+}
+#popup-top{
+    top: 35%;
+    display: none;
+}
+
+#popup-mid:target {
+    display: block;
+}
+#popup-mid{
+    top: 35%;
+    height: 485px;
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: yellow;
+}

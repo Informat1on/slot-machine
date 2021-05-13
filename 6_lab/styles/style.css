@@ -1,0 +1,180 @@
+a{
+    color: white;
+    text-decoration: none;
+}
+.changer{
+    font-size: 25px;
+    margin-left: 30px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    position: fixed;
+}
+
+#background{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+/*COUNTERS*/
+#balance_count{
+    position:fixed;
+    color: white;
+    font-size: calc(8px + (35 - 8) * ((100vw - 300px) / (1600 - 300)));
+    top: 81.8%;
+    left:33%;
+    z-index: 5;
+}
+
+#bet_count{
+    position: fixed;
+    font-size: calc(8px + (35 - 8) * ((100vw - 300px) / (1600 - 300)));
+    top: 81.8%;
+    left:87%;
+    width: 120px;
+    height: 76px;
+    color: white;
+    z-index: 5;
+}
+
+#win_count{
+    position:fixed;
+    color: white;
+    font-size: calc(8px + (35 - 8) * ((100vw - 300px) / (1600 - 300)));
+    top: 74.5%;
+    left:52.3%;
+    z-index: 5;
+}
+
+
+/*BUTTONS*/
+.button{
+    position: fixed;
+    top: 87.8%;
+    display: block;
+    padding: 1.4% 2.8%;
+    font-size: calc(4px + (16 - 4) * ((100vw - 300px) / (1600 - 300)));
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    z-index: 5;
+}
+.start {
+    width: 9%;
+    height: 9%;
+    left: 74.7%;
+    background-color: #4CAF50;
+}
+.stop {
+    width: 9%;
+    height: 9%;
+    left: 85.11%;
+    background-color: antiquewhite;
+}
+.maxBet{
+    padding: 0;
+    left: 53.4%;
+    width: 4.5%;
+    height: 9%;
+}
+.addFounds{
+    font-size: calc(4px + (12 - 4) * ((100vw - 300px) / (1600 - 300)));
+    padding: 0;
+    left: 29.16%;
+    width: 4.5%;
+    height: 9%;
+}
+
+.plus{
+    left: 61.6%;
+    width: 4.5%;
+    height: 9%;
+}
+.minus{
+    left: 67.97%;
+    width: 4.5%;
+    height: 9%;
+}
+
+/*POPUP*/
+.popup {
+    position: fixed;
+    color: yellow;
+    background: url("../img/popup-window.png") no-repeat;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    left:32.15% ;
+    text-align: center;
+    font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+
+    border: 3px solid yellow;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+/*Если ширина уменьшается до заданного значения в пикселях*/
+@media only screen and (max-width: 785px) {
+    h1{
+        font-size: 14px;
+    }
+    button{
+        font-size: 8px;
+    }
+
+
+}
+
+@media only screen and (max-width: 550px) {
+    h1{
+        font-size: 11px;
+    }
+}
+
+#popup-balance:target {
+    display: block;
+}
+#popup-balance{
+    top: 45%;
+    width: 20%;
+    height: 10%;
+    display: none;
+}
+
+/*WINNER POPUP*/
+#popup-winner{
+    display: none;
+    width: 19.6%;
+    height: 20%;
+}
+
+#popup-winner:target {
+    display: block;
+}
+
+.winner{
+    top: 40%;
+}
+
+
+/*Canvas*/
+/*Drums*/
+.drum{
+    position: fixed;
+    top:14.5%;
+    height: 54%;
+    width: 18.45%;
+    border: 1px solid grey;
+}
+.leftDrum{
+    left:12.15% ;
+}
+.centerDrum{
+    left:32.15% ;
+}
+.rightDrum{
+    left: 52%;
+}
