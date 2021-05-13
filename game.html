@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+    <meta charset="UTF-8">
+    <title>Однорукий бандит</title>
+</head>
+<body onload="showBet(bet);showBalance(balance);showWin(0)">
+
+<!--Фон-->
+<img draggable="false" id="background" src="img/gameback_final.png" alt="none">
+
+<!--Показатели баланса/ставки/выигрыша-->
+<div id="bet_count"></div>
+<div id="balance_count"></div>
+<div id="win_count"></div>
+
+<!--Барабаны-->
+
+<!--Левый-->
+<canvas class="drum leftDrum">
+    <p>Your browser doesnt support canvas !</p>
+</canvas>
+
+<!--Центральный-->
+<canvas class="drum centerDrum">
+    <p>Your browser doesnt support canvas !</p>
+</canvas>
+
+<!--Правый-->
+<canvas class="drum rightDrum">
+    <p>Your browser doesnt support canvas !</p>
+</canvas>
+
+<script type="text/javascript" src="js/test.js"></script>
+
+<!--Кнопки-->
+<button class="button plus" onclick="increaseBet()">+</button>
+<button class="button minus" onclick="decreaseBet()">-</button>
+<button class="button stop" onclick="clearBet()">Очистить !</button>
+<button class="button start" onclick="startSpin(ctxLeft,ctxCenter,ctxRight)">Старт !</button>
+<button class="button maxBet" onclick="maxBet()">Макс. ставка</button>
+
+
+<!--Всплывающее окно-->
+<form method="get" action="#popup-balance">
+    <button  class="button addFounds">Пополнить баланс</button>
+</form>
+
+<div class="popup" id="popup-balance">
+    <a href="#">
+        <p>
+            Выберите сумму пополнения
+            <br><br>
+            <button onclick="addFunds(10)">10</button>
+            <button onclick="addFunds(50)">50</button>
+            <button onclick="addFunds(100)">100</button>
+            <button onclick="addFunds(200)">200</button>
+        </p>
+    </a>
+</div>
+
+<div class="popup winner" id="popup-winner">
+<h1>Поздравляем !</h1>
+    <p>Вы выиграли <div id="win_popup_count"></div></p>
+    <footer>
+        <button onclick="document.getElementById('popup-winner').style.display = 'none';">OK</button>
+    </footer>
+</div>
+
+</body>
+</html>
